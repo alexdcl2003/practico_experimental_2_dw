@@ -1,6 +1,7 @@
 import alexisPhoto from '../assets/alexis-cajamarca.jpeg'
-import erickPhoto from '../assets/avatar-Erick.jpeg' 
-
+import erickPhoto from '../assets/avatar-Erick.jpeg'
+import gabrielPhoto from '../assets/gabriel-asuncion.jpeg'
+import eduardoPhoto from '../assets/eduardo-escobar.jpeg'
 const instructors = [
   {
     name: 'Alexis David Cajamarca Largo',
@@ -14,7 +15,7 @@ const instructors = [
     role: 'Desarrollador UI y Bootstrap',
     bio: 'Interesado en construir componentes reutilizables y diseños adaptables a distintos dispositivos.',
     initials: 'EA',
-    photo: null,
+    photo: eduardoPhoto,
   },
 {
   name: 'Erick Adrian Minda Granja',
@@ -35,7 +36,7 @@ const instructors = [
     role: 'Desarrollador de Contenido y SEO',
     bio: 'Enfocado en estructurar contenido web semántico, claro y fácil de encontrar.',
     initials: 'GA',
-    photo: null,
+    photo: gabrielPhoto,
   },
 ];
 
