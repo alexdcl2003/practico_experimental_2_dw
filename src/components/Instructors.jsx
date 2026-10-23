@@ -1,3 +1,5 @@
+import stevenPhoto from '../assets/steven-perea.png'
+
 const team = [
   {
     name: 'Alexis David Cajamarca Largo',
@@ -18,8 +20,17 @@ const team = [
   {
     name: 'Steven Jose Perea Romero',
     role: 'Landing, navegación e integración',
+    photo: stevenPhoto,
   },
 ]
+
+function initialsOf(name) {
+  return name
+    .split(' ')
+    .slice(0, 2)
+    .map((part) => part[0])
+    .join('')
+}
 
 export default function Instructors() {
   return (
@@ -36,15 +47,15 @@ export default function Instructors() {
         <div className="team-grid">
           {team.map((member) => (
             <article key={member.name} className="team-card">
-              <div className="team-photo" aria-hidden="true">
-                <span>
-                  {member.name
-                    .split(' ')
-                    .slice(0, 2)
-                    .map((part) => part[0])
-                    .join('')}
-                </span>
-              </div>
+              {member.photo ? (
+                <div className="team-photo team-photo-img">
+                  <img src={member.photo} alt={member.name} loading="lazy" />
+                </div>
+              ) : (
+                <div className="team-photo" aria-hidden="true">
+                  <span>{initialsOf(member.name)}</span>
+                </div>
+              )}
               <h3>{member.name}</h3>
               <p>{member.role}</p>
             </article>
