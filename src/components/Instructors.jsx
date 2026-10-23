@@ -1,7 +1,7 @@
 import alexisPhoto from '../assets/alexis-cajamarca.jpeg'
 import erickPhoto from '../assets/avatar-Erick.jpeg'
-import gabrielPhoto from '../assets/gabriel-asuncion.jpeg'
-import eduardoPhoto from '../assets/eduardo-escobar.jpeg'
+import gabrielPhoto from '../assets/gabriel-asuncion.jpg' 
+import eduardoPhoto from '../assets/eduardo-escobar.jpg' 
 const instructors = [
   {
     name: 'Alexis David Cajamarca Largo',
