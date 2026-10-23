@@ -1,4 +1,5 @@
 import alexisPhoto from '../assets/alexis-cajamarca.jpeg'
+import erickPhoto from '../assets/avatar-Erick.jpeg' 
 
 const instructors = [
   {
@@ -15,13 +16,13 @@ const instructors = [
     initials: 'EA',
     photo: null,
   },
-  {
-    name: 'Erick Adrian Minda Granja',
-    role: 'Desarrollador React',
-    bio: 'Trabaja en la organización de componentes y en la integración de interacciones dinámicas.',
-    initials: 'EM',
-    photo: null,
-  },
+{
+  name: 'Erick Adrian Minda Granja',
+  role: 'Desarrollador React',
+  bio: 'Trabaja en la organización de componentes y en la integración de interacciones dinámicas.',
+  initials: 'EM',
+  photo: erickPhoto,
+},
   {
     name: 'Steven Jose Perea Romero',
     role: 'Desarrollador Web',
